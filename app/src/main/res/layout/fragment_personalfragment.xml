@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.personalfragment">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#DFDFDF"
+        tools:context=".activity_and_fragment.MyAccountFragment"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@color/dark_orange"
+            android:orientation="horizontal"
+            android:paddingTop="40dp"
+            android:gravity="center_vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                app:cardCornerRadius="1000dp">
+
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/MyAccountFragment_UserLogo"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+
+
+                    android:layout_gravity="center"
+                    android:background="@color/white"
+                    android:scaleType="fitXY"
+                    app:contentPadding="10dp"
+                    app:strokeWidth="0dp" />
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:id="@+id/MyAccountFragment_UserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login / Register"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginStart="20dp"
+                android:fontFamily="sans-serif-medium" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/AccountInformation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@color/white"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:paddingVertical="15dp"
+            android:paddingStart="10dp"
+            android:text="Account information"
+            android:textSize="17sp"
+            app:drawableStartCompat="@drawable/ic_user_regular_svgrepo" />
+
+        <TextView
+            android:id="@+id/policy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Policy"
+            android:background="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="4dp"
+            android:textSize="17sp"
+            android:drawablePadding="20dp"
+            android:paddingVertical="15dp"
+            app:drawableStartCompat="@drawable/ic_form_solid_svgrepo"
+            android:paddingStart="10dp"
+            android:gravity="center_vertical"
+            />
+
+        <TextView
+            android:id="@+id/Comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:background="@color/white"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:paddingVertical="15dp"
+            android:paddingStart="10dp"
+            android:text="Comment"
+            android:textSize="17sp"
+            app:drawableStartCompat="@drawable/ic_chat_round_dots_24dp_svgrepo" />
+
+        <TextView
+            android:id="@+id/supportcenter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Support center"
+            android:background="@color/white"
+            android:layout_marginBottom="4dp"
+            android:textSize="17sp"
+            android:drawablePadding="20dp"
+            android:paddingVertical="15dp"
+            app:drawableStartCompat="@drawable/ic_ask_circle_solid_24dp_svgrepo"
+            android:paddingStart="10dp"
+            android:gravity="center_vertical" />
+        <TextView
+            android:id="@+id/changepass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Change Password"
+            android:background="@color/white"
+            android:layout_marginBottom="4dp"
+            android:textSize="17sp"
+            android:drawablePadding="20dp"
+            android:paddingVertical="15dp"
+            app:drawableStartCompat="@drawable/language"
+            android:paddingStart="10dp"
+            android:gravity="center_vertical" />
+        <TextView
+            android:id="@+id/Logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Log out"
+            android:background="@color/white"
+            android:layout_marginVertical="20dp"
+            android:textSize="18sp"
+            android:drawablePadding="20dp"
+            android:paddingVertical="15dp"
+            android:textColor="#FF5722"
+            app:drawableStartCompat="@drawable/ic_logout_regular_24dp_svgrepo"
+            android:paddingStart="10dp"
+            android:paddingEnd="0dp"
+            android:gravity="center_vertical" />
+
+    </LinearLayout>
+
+</FrameLayout>
